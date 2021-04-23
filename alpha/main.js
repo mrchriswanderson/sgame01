@@ -18,8 +18,8 @@ var roleBuilder = require('role.builder');
 module.exports.loop = function () {
 
 	for(var name in Game.rooms) {
-        console.log('Room "'+name+'" has '+Game.rooms[name].energyAvailable+' energy');
-    }
+            console.log('Room "'+name+'" has '+Game.rooms[name].energyAvailable+' energy');
+        }
 
 	var extensions = Game.spawns.Spawn1.room.find(FIND_MY_STRUCTURES, {
     	filter: { structureType: STRUCTURE_EXTENSION }
